@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <% include partials/head.ejs%>
+  </head>
+  <body>
+    <% include partials/flash.ejs %>
+
+    <main class="register-page vw-100 vh-100 relative flex-center">
+      <section>
+        <h1 class="register-page__heading f4 text-center">
+          Express / Passport
+        </h1>
+
+        <p class="b1 text-center grey">
+          Register with your email address and password.
+        </p>
+
+        <form
+          class="form center-relative flex flex--aligncenter flex--column flex--justifycenter"
+          action="/register"
+          method="POST"
+        >
+          <input
+            class="form__input w-full relative block b2"
+            type="email"
+            name="username"
+            placeholder="username"
+            required
+          />
+
+          <input
+            class="form__input w-full relative block b2"
+            type="password"
+            name="password"
+            placeholder="password"
+            required
+          />
+
+          <input
+            class="button center-relative block cursor-pointer f4"
+            type="submit"
+            value="Register"
+          />
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

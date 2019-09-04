@@ -1,0 +1,10 @@
+<div class="flash w-full fixed pin-b pin-l pin-r flex-center b3">
+  <% if ( messages ) { %> <% if ( messages.danger && messages.danger.length ) {
+  %>
+  <p class="flash__error">[error] <%= messages.danger %></p>
+  <% } %> <% if ( messages.warning && messages.warning.length ) { %>
+  <p class="flash__warning">[warn] <%= messages.warning %></p>
+  <% } %> <% if ( messages.success && messages.success.length ) { %>
+  <p class="flash__info">[info] <%= messages.success %></p>
+  <% } %> <% } %>
+</div>

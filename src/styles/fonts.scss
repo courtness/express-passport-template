@@ -1,0 +1,222 @@
+////////////
+
+@font-face {
+  font-family: "fk-display-regular";
+  src: url("../assets/fonts/fkdisplay-regular-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "fk-grotesk-mono";
+  src: url("../assets/fonts/fkgrotesk-monospaced-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "fk-grotesk-regular";
+  src: url("../assets/fonts/fkgrotesk-regular-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+// @font-face {
+//   font-family: "fk-grotesk-regular";
+//   src: url("/assets/fonts/fkgrotesk-regular-webfont.eot");
+//   src: url("/assets/fonts/fkgrotesk-regular-webfont.eot?#iefix")
+//       format("embedded-opentype"),
+//     url("/assets/fonts/fkgrotesk-regular-webfont.woff2") format("woff2"),
+//     url("/assets/fonts/fkgrotesk-regular-webfont.woff") format("woff"),
+//     url("/assets/fonts/fkgrotesk-regular-webfont.ttf") format("truetype"),
+//     url("/assets/fonts/fkgrotesk-regular-webfont.svg#fk_groteskregular")
+//       format("svg");
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+////////////
+
+// mixins
+
+@mixin f1 {
+  font-family: "fk-display-regular", "helvetica";
+
+  font-size: 100px;
+  line-height: 96px;
+
+  @include sm {
+    font-size: 72px;
+    line-height: 72px;
+  }
+
+  @include xs {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+.f1 {
+  @include f1;
+}
+
+//
+
+@mixin f2 {
+  font-family: "fk-display-regular", "helvetica";
+
+  font-size: 50px;
+  line-height: 48px;
+
+  @include sm {
+    font-size: 40px;
+    line-height: 36px;
+  }
+
+  @include xs {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+.f2 {
+  @include f2;
+}
+
+//
+
+@mixin f3 {
+  font-family: "fk-display-regular", "helvetica";
+
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.f3 {
+  @include f3;
+}
+
+//
+
+@mixin f4 {
+  font-family: "fk-display-regular", "helvetica";
+
+  font-size: 24px;
+  line-height: 24px;
+
+  @include xs {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.f4 {
+  @include f4;
+}
+
+//
+
+// @mixin f5 {
+//   font-family: "fk-grotesk-mono", "helvetica";
+
+//   font-size: 24px;
+//   line-height: 24px;
+
+//   @include xs {
+//     font-size: 16px;
+//     line-height: 20px;
+//   }
+// }
+
+// .f5 {
+//   @include f5;
+// }
+
+//
+
+@mixin b1 {
+  font-family: "fk-grotesk-regular", "helvetica";
+
+  font-size: 18px;
+  line-height: 24px;
+
+  @include sm {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @include xs {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+
+.b1 {
+  @include b1;
+}
+
+//
+
+@mixin b2 {
+  font-family: "fk-grotesk-mono", "helvetica";
+
+  font-size: 18px;
+  line-height: 24px;
+
+  @include sm {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.b2 {
+  @include b2;
+}
+
+//
+
+@mixin b3 {
+  font-family: "fk-grotesk-mono", "helvetica";
+
+  font-size: 12px;
+  line-height: 16px;
+
+  @include sm {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  @include xs {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+.b3 {
+  @include b3;
+}
+
+//
+
+@mixin caption {
+  font-family: "fk-grotesk-mono", "helvetica";
+  font-size: 12px;
+  line-height: 16px;
+  color: color(onyx);
+}
+
+.caption {
+  @include caption;
+}
+
+//
+
+@mixin button {
+  font-family: "fk-grotesk-mono", "helvetica";
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.button {
+  @include button;
+}

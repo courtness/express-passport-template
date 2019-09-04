@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <% include partials/head.ejs%>
+  </head>
+  <body>
+    <% include partials/flash.ejs %>
+
+    <main class="index-page vw-100 vh-100 relative flex-center">
+      <section>
+        <h1 class="index-page__heading f4 text-center">
+          Time + Materials
+        </h1>
+
+        <p class="index-page__subheading b1 text-center grey">
+          Future home of the admin console.
+        </p>
+
+        <div class="relative flex-center">
+          <a
+            href="/login"
+            class="button center-relative flex-center cursor-pointer"
+          >
+            Login
+          </a>
+
+          <a
+            href="/register"
+            class="button center-relative flex-center cursor-pointer"
+          >
+            Register
+          </a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

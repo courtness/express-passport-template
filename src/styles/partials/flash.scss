@@ -1,0 +1,11 @@
+.flash {
+  bottom: 24px;
+
+  &__error {
+    color: color(red);
+  }
+
+  &__warning {
+    color: color(orange);
+  }
+}

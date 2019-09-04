@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <% include partials/head.ejs %>
+  </head>
+  <body>
+    <% include partials/flash.ejs %>
+
+    <main class="login-page vw-100 vh-100 relative flex-center">
+      <section>
+        <h1 class="login-page__heading f4 text-center">
+          Express / Passport
+        </h1>
+
+        <p class="b1 text-center grey">
+          Login.
+        </p>
+
+        <form
+          class="form relative flex flex--aligncenter flex--column flex--justifycenter"
+          action="/login"
+          method="POST"
+        >
+          <input
+            class="form__input w-full relative block b2"
+            type="email"
+            name="username"
+            placeholder="username"
+            required
+          />
+
+          <input
+            class="form__input w-full relative block b2"
+            type="password"
+            name="password"
+            placeholder="password"
+            required
+          />
+
+          <input
+            class="button center-relative block cursor-pointer f4"
+            type="submit"
+            value="Log in"
+          />
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+.form {
+  width: 320px;
+
+  &__input {
+    border: none;
+    border-bottom: 1px solid black;
+    background: transparent;
+    margin-top: 24px;
+
+    // &::-webkit-input-placeholder {
+    // }
+
+    // &::-moz-placeholder {
+    // }
+
+    // &:-ms-input-placeholder {
+    // }
+
+    // &:-moz-placeholder {
+    // }
+  }
+
+  //
+
+  .button {
+    margin-top: 48px;
+  }
+}

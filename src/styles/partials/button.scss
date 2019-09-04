@@ -1,0 +1,12 @@
+.button {
+  height: 48px;
+  width: 120px;
+  border: 3px solid color(onyx);
+
+  //
+
+  &:hover {
+    background-color: color(onyx);
+    color: white;
+  }
+}

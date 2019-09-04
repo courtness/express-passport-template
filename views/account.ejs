@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <% include partials/head.ejs%>
+  </head>
+  <body>
+    <% include partials/flash.ejs %>
+
+    <main class="account-page vw-100 vh-100 relative flex-center">
+      <section>
+        <h1 class="account-page__heading f4 text-center">
+          Express / Passport
+        </h1>
+
+        <p class="account-page__subheading b1 text-center grey">
+          Account.
+        </p>
+        <p class="account-page__subheading b1 text-center grey">
+          This page doesn't do anything yet, but your email is <%=
+          userData[0].email %>.
+        </p>
+
+        <a
+          href="/logout"
+          class="button center-relative flex-center cursor-pointer f4"
+        >
+          <span>Logout</span>
+        </a>
+      </section>
+    </main>
+  </body>
+</html>
