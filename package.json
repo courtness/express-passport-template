@@ -20,7 +20,7 @@
     "eslint": "^6.1.0",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.18.2",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "express-flash": "^0.0.2",
     "express-session": "^1.16.2",
     "fs": "^0.0.1-security",
